@@ -1,0 +1,6 @@
+<p>home works!</p>
+
+<input type="text" [(ngModel)]="userInput">
+<p [ngClass]="{'error': userInput.length < 5}">
+  {{ userInput | placeholder:5 }}
+</p>
